@@ -24,7 +24,6 @@ Denver Metropolitan Area, Colorado
 ## Website Structure
 
 ```
-website/
 ├── index.html          # Homepage
 ├── services.html       # Detailed service offerings
 ├── about.html         # Company information and story
