@@ -4,19 +4,35 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile Navigation
     const hamburger = document.getElementById('hamburger');
     const navMenu = document.getElementById('nav-menu');
+    const navLinks = document.querySelectorAll('.nav-link');
+
+    // Current page active nav state
+    const currentPath = window.location.pathname.split('/').pop() || 'index.html';
+    navLinks.forEach(link => {
+        const linkPath = link.getAttribute('href');
+        if (!linkPath) return;
+
+        if (linkPath === currentPath || (currentPath === 'index.html' && linkPath === '#home')) {
+            link.classList.add('active');
+            link.setAttribute('aria-current', 'page');
+        }
+    });
     
     if (hamburger && navMenu) {
+        hamburger.setAttribute('aria-expanded', 'false');
+
         hamburger.addEventListener('click', function() {
             hamburger.classList.toggle('active');
             navMenu.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', navMenu.classList.contains('active') ? 'true' : 'false');
         });
         
         // Close mobile menu when clicking on a link
-        const navLinks = document.querySelectorAll('.nav-link');
         navLinks.forEach(link => {
             link.addEventListener('click', function() {
                 hamburger.classList.remove('active');
                 navMenu.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
             });
         });
     }
@@ -113,7 +129,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Create mailto link
                 const subject = encodeURIComponent("New Contact Form - SIX7ONE8 RESPITE");
                 const body = encodeURIComponent(emailBody);
-                const mailtoLink = `mailto:SIX7ONE8@ICLOUD.COM?subject=${subject}&body=${body}`;
+                const mailtoLink = `mailto:six7one8@icloud.com?subject=${subject}&body=${body}`;
                 
                 // Open email client
                 window.location.href = mailtoLink;

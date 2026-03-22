@@ -6,7 +6,7 @@
     <meta name="description" content="Contact SIX7ONE8 RESPITE for professional respite care services. Call us, send a message, or schedule a consultation today.">
     <title>Contact Us - SIX7ONE8 RESPITE</title>
     <link rel="stylesheet" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
@@ -41,6 +41,164 @@
             <div class="page-hero-content">
                 <h1>Contact SIX7ONE8 RESPITE</h1>
                 <p>Ready to get started? We're here to help you find the perfect respite care solution for your family.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Client Intake Form Section -->
+    <section class="intake-section" id="client-intake">
+        <div class="container">
+            <div class="intake-shell">
+                <div class="intake-header">
+                    <h2>Client Intake Form</h2>
+                    <p>Share a few details so we can match your family with the right care plan and follow up quickly.</p>
+                </div>
+
+                <form class="client-intake-form" id="clientIntakeForm" action="https://formsubmit.co/six7one8@icloud.com" method="POST">
+                    <input type="hidden" name="_subject" value="New Client Intake Form - SIX7ONE8 RESPITE">
+                    <input type="hidden" name="_captcha" value="false">
+                    <input type="hidden" name="_template" value="table">
+                    <input type="hidden" name="_honey" value="">
+
+                    <div class="form-section">
+                        <h4><i class="fas fa-user-circle"></i> Primary Contact Information</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="intake-firstName">First Name *</label>
+                                <input type="text" id="intake-firstName" name="primaryContactFirstName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="intake-lastName">Last Name *</label>
+                                <input type="text" id="intake-lastName" name="primaryContactLastName" required>
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="intake-email">Email Address *</label>
+                                <input type="email" id="intake-email" name="primaryContactEmail" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="intake-phone">Phone Number *</label>
+                                <input type="tel" id="intake-phone" name="primaryContactPhone" required>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="intake-preferredContact">Preferred Contact Method *</label>
+                            <select id="intake-preferredContact" name="preferredContactMethod" required>
+                                <option value="">Select one</option>
+                                <option value="phone">Phone</option>
+                                <option value="email">Email</option>
+                                <option value="text">Text Message</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4><i class="fas fa-heart"></i> Care Recipient Details</h4>
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="intake-clientName">Care Recipient Name *</label>
+                                <input type="text" id="intake-clientName" name="careRecipientName" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="intake-ageRange">Age Range *</label>
+                                <select id="intake-ageRange" name="careRecipientAgeRange" required>
+                                    <option value="">Select one</option>
+                                    <option value="child">Child (0-12)</option>
+                                    <option value="teen">Teen (13-17)</option>
+                                    <option value="adult">Adult (18-64)</option>
+                                    <option value="senior">Senior (65+)</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <fieldset class="intake-checkboxes">
+                            <legend>Services of Interest *</legend>
+                            <div class="checkbox-grid">
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="servicesOfInterest[]" value="Respite Care">
+                                    <span class="checkmark"></span>
+                                    Respite Care
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="servicesOfInterest[]" value="Community Connector">
+                                    <span class="checkmark"></span>
+                                    Community Connector
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="servicesOfInterest[]" value="Homemaker Basic">
+                                    <span class="checkmark"></span>
+                                    Homemaker Basic
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="servicesOfInterest[]" value="Enhanced Homemaker">
+                                    <span class="checkmark"></span>
+                                    Enhanced Homemaker
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="servicesOfInterest[]" value="Mentorship">
+                                    <span class="checkmark"></span>
+                                    Mentorship
+                                </label>
+                                <label class="checkbox-label">
+                                    <input type="checkbox" name="servicesOfInterest[]" value="Not Sure Yet">
+                                    <span class="checkmark"></span>
+                                    Not Sure Yet
+                                </label>
+                            </div>
+                        </fieldset>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="intake-startDate">Preferred Start Date</label>
+                                <input type="date" id="intake-startDate" name="preferredStartDate">
+                            </div>
+                            <div class="form-group">
+                                <label for="intake-frequency">Estimated Frequency</label>
+                                <select id="intake-frequency" name="estimatedFrequency">
+                                    <option value="">Select one</option>
+                                    <option value="one-time">One-time support</option>
+                                    <option value="weekly">Weekly</option>
+                                    <option value="multiple-weekly">Multiple times per week</option>
+                                    <option value="weekends">Weekends only</option>
+                                    <option value="overnight">Overnight / Extended</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-section">
+                        <h4><i class="fas fa-notes-medical"></i> Additional Information</h4>
+                        <div class="form-group">
+                            <label for="intake-needs">Medical, mobility, behavior, or communication needs</label>
+                            <textarea id="intake-needs" name="careNeedsSummary" rows="4" placeholder="Share any details that will help us prepare the right support plan."></textarea>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="intake-insurance">Do you have Medicaid or waiver support?</label>
+                            <select id="intake-insurance" name="coverageType">
+                                <option value="">Select one</option>
+                                <option value="yes">Yes</option>
+                                <option value="no">No</option>
+                                <option value="unsure">Not Sure</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" id="intake-consent" name="contactConsent" required>
+                                <span class="checkmark"></span>
+                                I consent to SIX7ONE8 RESPITE contacting me about services and scheduling. *
+                            </label>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        <i class="fas fa-file-signature"></i> Submit Intake Form
+                    </button>
+                </form>
             </div>
         </div>
     </section>
@@ -111,7 +269,7 @@
                 <!-- Contact Form -->
                 <div class="contact-form-container">
                     <h2>Send Us a Message</h2>
-                    <form class="contact-form" id="contactForm" action="mailto:SIX7ONE8@ICLOUD.COM" method="post" enctype="text/plain">
+                    <form class="contact-form" id="contactForm" action="mailto:six7one8@icloud.com" method="post" enctype="text/plain">
                         <div class="form-row">
                             <div class="form-group">
                                 <label for="firstName">First Name *</label>
@@ -238,7 +396,7 @@
                     <a href="tel:303-995-9851" class="btn btn-primary">
                         <i class="fas fa-phone"></i> Call (303) 995-9851
                     </a>
-                    <a href="#contactForm" class="btn btn-outline">Send Message</a>
+                    <a href="#client-intake" class="btn btn-outline">Start Intake Form</a>
                 </div>
             </div>
         </div>
@@ -254,7 +412,7 @@
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
-                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/johnathon-roy-craig-b9b5402a6" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
                 <div class="footer-section">
