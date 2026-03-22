@@ -2003,6 +2003,15 @@ body {
     background: linear-gradient(135deg, #241b12, #4a3620);
 }
 
+.cta .cta-content h2 {
+    color: #fff8eb;
+    text-shadow: 0 2px 12px rgba(0, 0, 0, 0.18);
+}
+
+.cta .cta-content p {
+    color: rgba(255, 248, 235, 0.88);
+}
+
 .footer {
     background: linear-gradient(135deg, #17120d, #2a2118);
     border-top: 1px solid rgba(212, 176, 106, 0.2);
