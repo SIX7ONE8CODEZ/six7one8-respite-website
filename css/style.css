@@ -2189,3 +2189,286 @@ body {
         grid-template-columns: 1fr;
     }
 }
+
+/* Mobile polish pass */
+@media (max-width: 768px) {
+    .container,
+    .nav-container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .navbar {
+        padding: 0.75rem 0;
+    }
+
+    .logo-img {
+        height: 58px;
+        margin-right: 0.35rem;
+    }
+
+    .respite-text {
+        font-size: 1.05rem;
+        letter-spacing: 1px;
+    }
+
+    .nav-menu {
+        top: 74px;
+        height: calc(100vh - 74px);
+        padding: 1.25rem 1rem 2rem;
+        justify-content: flex-start;
+        gap: 0.5rem;
+        overflow-y: auto;
+    }
+
+    .nav-menu a {
+        width: min(100%, 340px);
+        margin: 0 auto;
+        padding: 0.95rem 1rem;
+        border-radius: 14px;
+        background: rgba(159, 122, 63, 0.08);
+    }
+
+    .nav-link::after {
+        display: none;
+    }
+
+    .hero {
+        margin-top: 74px;
+        padding: 2.5rem 0 3rem;
+    }
+
+    .page-hero {
+        margin-top: 74px;
+        padding: 2.75rem 0;
+    }
+
+    .page-hero-content h1 {
+        font-size: 2rem;
+    }
+
+    .page-hero-content p,
+    .hero-subtitle {
+        font-size: 1rem;
+    }
+
+    .hero-content,
+    .content-wrapper,
+    .story-content,
+    .service-content,
+    .contact-content,
+    .qualifications-content {
+        gap: 1.75rem;
+    }
+
+    .hero-text h1 {
+        font-size: clamp(2rem, 8vw, 2.55rem);
+        line-height: 1.12;
+    }
+
+    .hero-buttons,
+    .cta-buttons {
+        width: 100%;
+    }
+
+    .hero-buttons .btn,
+    .cta-buttons .btn,
+    .submit-btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .hero-placeholder,
+    .image-placeholder {
+        width: 100%;
+        max-width: 360px;
+        height: 260px;
+        margin: 0 auto;
+    }
+
+    .services-grid,
+    .values-grid,
+    .faq-grid,
+    .benefits-grid,
+    .service-features,
+    .time-options,
+    .cert-grid,
+    .story-stats {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail {
+        margin-bottom: 3.5rem;
+    }
+
+    .service-content,
+    .service-detail.reverse .service-content {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail.reverse .service-text,
+    .service-detail.reverse .service-image {
+        order: initial;
+    }
+
+    .service-card,
+    .value-card,
+    .faq-item,
+    .benefit-item,
+    .feature-box,
+    .time-card,
+    .contact-method,
+    .cert-item {
+        padding: 1.35rem;
+    }
+
+    .feature {
+        gap: 0.85rem;
+    }
+
+    .contact-methods {
+        margin-bottom: 2rem;
+    }
+
+    .contact-method {
+        align-items: flex-start;
+    }
+
+    .contact-form,
+    .employment-form-container,
+    .intake-shell {
+        padding: 1.5rem;
+    }
+
+    .form-section {
+        margin-bottom: 2rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .form-group {
+        margin-bottom: 1.1rem;
+    }
+
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        min-height: 52px;
+    }
+
+    .form-group textarea {
+        min-height: 140px;
+    }
+
+    .checkbox-label,
+    .radio-label {
+        font-size: 0.96rem;
+    }
+
+    .footer {
+        padding-top: 2.5rem;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 1.75rem;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .container,
+    .nav-container {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .logo-img {
+        height: 50px;
+    }
+
+    .respite-text {
+        font-size: 0.95rem;
+    }
+
+    .hero,
+    .page-hero,
+    .services-overview,
+    .why-choose-us,
+    .services-detail,
+    .our-story,
+    .mission-values,
+    .qualifications,
+    .contact-section,
+    .faq-section,
+    .employment-section,
+    .intake-section,
+    .cta {
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+
+    .hero {
+        padding-top: 2rem;
+    }
+
+    .hero-text h1,
+    .page-hero-content h1,
+    .section-title,
+    .text-content h2,
+    .story-text h2,
+    .contact-info h2,
+    .contact-form-container h2,
+    .intake-header h2,
+    .cta .cta-content h2 {
+        font-size: 1.75rem;
+    }
+
+    .service-text h2,
+    .employment-header h2,
+    .employment-form-container h3 {
+        font-size: 1.55rem;
+    }
+
+    .hero-placeholder,
+    .image-placeholder {
+        height: 220px;
+        border-radius: 18px;
+    }
+
+    .photo-overlay {
+        padding: 1rem;
+    }
+
+    .photo-overlay p {
+        font-size: 1.05rem;
+    }
+
+    .service-card,
+    .value-card,
+    .faq-item,
+    .benefit-item,
+    .feature-box,
+    .time-card,
+    .contact-method,
+    .cert-item,
+    .contact-form,
+    .employment-form-container,
+    .intake-shell {
+        padding: 1.1rem;
+        border-radius: 16px;
+    }
+
+    .method-icon,
+    .service-icon,
+    .value-icon {
+        width: 52px;
+        height: 52px;
+    }
+
+    .faq-grid {
+        grid-template-columns: 1fr;
+    }
+}
